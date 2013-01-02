@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -14,9 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class About extends Base_Activity_Navigation {
-
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +23,17 @@ public class About extends Base_Activity_Navigation {
 
         if (useToolbar()) {
             setSupportActionBar(toolbar);
-            setTitle("About");
+            setTitle(getString(R.string.about_actiobar_title));
         } else {
+            assert toolbar != null;
             toolbar.setVisibility(View.GONE);
         }
 
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        assert tabLayout != null;
         tabLayout.setupWithViewPager(viewPager);
 
 
@@ -43,13 +41,13 @@ public class About extends Base_Activity_Navigation {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new BlankFragment(), "Livin");
-        adapter.addFragment(new BlankFragment(), "Aswin");
-        adapter.addFragment(new BlankFragment(), "Nihal");
-        adapter.addFragment(new BlankFragment(), "Basil");
-        adapter.addFragment(new BlankFragment(), "Britto");
-        adapter.addFragment(new BlankFragment(), "Soolu");
-        adapter.addFragment(new BlankFragment(), "Tony");
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_livin));
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_aswin));
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_nihal));
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_basil));
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_britto));
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_soolu));
+        adapter.addFragment(new BlankFragment(), getString(R.string.name_tony));
 
         viewPager.setAdapter(adapter);
     }

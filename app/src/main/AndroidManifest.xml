@@ -11,11 +11,7 @@
         <activity
             android:name=".MainActivity"
             android:noHistory="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Base_Activity_Navigation" />
         <activity android:name=".MyAccount" />
@@ -23,7 +19,18 @@
         <activity android:name=".Thinkpad" />
         <activity android:name=".JobStatus" />
         <activity android:name=".Finance" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".tabs">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
     </application>
 
 </manifest>

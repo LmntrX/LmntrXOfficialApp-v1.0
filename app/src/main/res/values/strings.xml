@@ -8,4 +8,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_actiobar_title">About</string>
+    <string name="name_livin">Livin</string>
+    <string name="name_aswin">Aswin</string>
+    <string name="name_nihal">Nihal</string>
+    <string name="name_basil">Basil</string>
+    <string name="name_britto">Britto</string>
+    <string name="name_soolu">Soolu</string>
+    <string name="name_tony">Tony</string>
 </resources>
