@@ -20,7 +20,10 @@
         <activity android:name=".Base_Activity_Navigation" />
         <activity android:name=".MyAccount" />
         <activity android:name=".Dashboard" />
-        <activity android:name=".Thinkpad"></activity>
+        <activity android:name=".Thinkpad" />
+        <activity android:name=".JobStatus" />
+        <activity android:name=".Finance" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>

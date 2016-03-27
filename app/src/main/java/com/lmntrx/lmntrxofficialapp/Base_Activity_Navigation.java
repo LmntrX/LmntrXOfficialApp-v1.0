@@ -93,10 +93,18 @@ public class Base_Activity_Navigation extends AppCompatActivity implements Navig
             startActivity(intent);
 
         } else if (id == R.id.nav_jobstatus) {
+            Intent intent = new Intent(this,JobStatus.class);
+            startActivity(intent);
+
 
         } else if (id == R.id.nav_finance) {
+            Intent intent = new Intent(this,Finance.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_about) {
+            Intent intent = new Intent(this,About.class);
+            startActivity(intent);
+
 
         }
 
