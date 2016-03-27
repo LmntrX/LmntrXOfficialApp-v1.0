@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class MainActivity extends Activity {
 
-    final int splashScreenDuration=5000;
+    final int splashScreenDuration=1000;  // INCREASE VALUE AFTER TESTING
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
