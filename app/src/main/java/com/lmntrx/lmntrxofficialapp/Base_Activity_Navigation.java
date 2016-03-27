@@ -43,7 +43,7 @@ public class Base_Activity_Navigation extends AppCompatActivity implements Navig
     protected boolean useToolbar()
     {
         return true;
-    }
+    }  // Override this method in derived classes and return false if toolbar is not required.
 
 
     @Override
